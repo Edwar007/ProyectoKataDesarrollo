@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Editar Colaborador</title>
+  <link rel="stylesheet" href="Css/Style.css" />
+  <link rel="stylesheet" href="Css/Collaborator.css" />
+</head>
+<body>
+
+  <div id="navbar-container"></div>
+
+  <main class="form-wrapper">
+    <h1>Editar Colaborador</h1>
+
+    <form id="search-form" class="collaborator-form">
+      <div class="form-group">
+        <label for="searchEmail">Correo del colaborador:</label>
+        <input type="email" id="searchEmail" name="searchEmail" placeholder="Ingresa el correo" required />
+      </div>
+      <button type="submit" class="submit-button">Buscar</button>
+    </form>
+
+    <form id="edit-form" class="collaborator-form" style="display: none;">
+      <div class="form-group">
+        <label for="editName">Nombre:</label>
+        <input type="text" id="editName" name="editName" />
+      </div>
+
+      <div class="form-group">
+        <label for="editEmail">Correo:</label>
+        <input type="email" id="editEmail" name="editEmail" disabled />
+      </div>
+
+      <div class="form-group">
+        <label for="editStartDate">Fecha de ingreso:</label>
+        <input type="date" id="editStartDate" name="editStartDate" />
+      </div>
+
+      <div class="button-group">
+        <button type="button" class="submit-button" id="updateBtn">Actualizar</button>
+        <button type="button" class="submit-button delete" id="deleteBtn">Eliminar</button>
+      </div>
+    </form>
+
+    <div id="editMessage" class="message"></div>
+  </main>
+
+  <script src="Js/Main.js"></script>
+  <script src="Js/EditCollaborator.js"></script>
+</body>
+</html>

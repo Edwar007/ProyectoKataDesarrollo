@@ -1,0 +1,60 @@
+.onboarding-form {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-width: 500px;
+  margin: 10px auto;
+  background-color: #fff;
+  padding: 20px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.onboarding-form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.onboarding-form label {
+  font-weight: 500;
+  font-size: 15px;
+  margin-bottom: 4px;
+  color: #333;
+}
+
+.onboarding-form input,
+.onboarding-form select {
+  padding: 8px 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+  transition: border-color 0.3s;
+}
+
+.onboarding-form input:focus,
+.onboarding-form select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.submit-button {
+  padding: 10px 16px;
+  font-size: 16px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.message {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+}

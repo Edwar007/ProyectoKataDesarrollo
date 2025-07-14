@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendario de Onboardings</title>
+    <link rel="stylesheet" href="Css/Style.css" />
+    <link rel="stylesheet" href="css/Calendar.css" />
+
+    <!-- FullCalendar CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="navbar-container"></div>
+    <h1 class="page-title">Calendario de Onboardings</h1>
+
+    <div id="calendar"></div>
+
+    <!-- Modal de detalle -->
+    <div id="onboardingModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" id="closeModal">&times;</span>
+        <h2>Detalle del Onboarding</h2>
+        <div class="onboarding-content">
+          <div class="info-column">
+            <div class="detail-group">
+              <strong>Nombre:</strong> <span id="detalleNombre"></span>
+            </div>
+            <div class="detail-group">
+              <strong>Categoría:</strong> <span id="detalleCategoria"></span>
+            </div>
+            <div class="detail-group">
+              <strong>Sesiones:</strong> <span id="detalleSesiones"></span>
+            </div>
+            <div class="detail-group">
+              <strong>Hora:</strong> <span id="detalleHora"></span>
+            </div>
+            <div class="detail-group">
+              <strong>Estado:</strong> <span id="detalleEstado"></span>
+            </div>
+          </div>
+
+          <div class="collaborators-box">
+            <h4>Colaboradores asignados</h4>
+            <ul id="detalleColaboradores" class="collaborators-list"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FullCalendar JS -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/locales-all.global.min.js"></script>
+
+    <script src="Js/Main.js"></script>
+    <script src="Js/Calendar.js"></script>
+  </body>
+</html>

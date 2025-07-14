@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestionar Onboardings</title>
+    <link rel="stylesheet" href="Css/Style.css" />
+    <link rel="stylesheet" href="css/ManageOnboardings.css" />
+  </head>
+  <body>
+    <div id="navbar-container"></div>
+
+    <h1 class="page-title">Gestionar Onboarding</h1>
+
+    <main class="onboarding-page">
+      <!-- LISTA DE ONBOARDINGS -->
+      <section class="onboarding-list" id="onboardingList"></section>
+
+      <!-- DETALLES -->
+      <section
+        class="onboarding-details"
+        id="onboardingDetails"
+        style="display: none"
+      >
+        <h2 id="onboardingTitle">Detalle del Onboarding</h2>
+
+        <div class="onboarding-content">
+          <div class="info-column">
+            <div class="detail-group">
+              <strong>Categoría:</strong> <span id="categoryName"></span>
+            </div>
+            <div class="detail-group">
+              <strong>Nombre:</strong> <span id="nombre"></span>
+            </div>
+            <div class="detail-group">
+              <strong>Sesiones:</strong> <span id="numSesiones"></span>
+            </div>
+            <div class="detail-group">
+              <strong>Hora inicio:</strong> <span id="horaInicio"></span>
+            </div>
+            <div class="detail-group">
+              <strong>Hora fin:</strong> <span id="horaFin"></span>
+            </div>
+          </div>
+
+          <div class="collaborators-box">
+            <h4>Participantes</h4>
+            <ul id="collaboratorsList" class="collaborators-list"></ul>
+          </div>
+        </div>
+
+        <hr />
+
+        <!-- INVITAR COLABORADOR -->
+        <h3>Invitar Colaborador</h3>
+        <form id="inviteForm" class="invite-form">
+          <input
+            type="email"
+            id="collaboratorEmail"
+            placeholder="Correo del colaborador"
+            required
+          />
+          <button type="submit" class="invite-btn">Invitar</button>
+        </form>
+        <div id="inviteMessage" class="message"></div>
+
+        <div class="action-buttons">
+          <button id="btnActualizar" class="edit-btn">Actualizar</button>
+          <button id="btnCancelar" class="delete-btn">Cancelar</button>
+        </div>
+      </section>
+    </main>
+
+    <!-- MODAL DE ACTUALIZACIÓN -->
+    <div id="updateModal" class="modal">
+      <div class="modal-content">
+        <span id="closeUpdateModal" class="close-btn">&times;</span>
+        <h2>Editar Onboarding</h2>
+
+        <form id="updateForm">
+
+          <label
+            >Categoría:<br />
+            <select id="updCategoria" required></select> </label
+          ><br /><br />
+          <label
+            >Nombre:<br /><input type="text" id="updNombre" required /></label
+          ><br /><br />
+          <label>
+            Estado:
+            <select id="updEstado" required>
+              <option value="PENDIENTE">PENDIENTE</option>
+              <option value="REALIZADO">REALIZADO</option>
+              <option value="CANCELADO">CANCELADO</option>
+            </select> </label
+          ><br />
+           
+
+          <label
+            >Fecha Inicio:<br /><input
+              type="date"
+              id="updFecIni"
+              required /></label
+          ><br /><br />
+          <label
+            >Número de Sesiones:<br /><input
+              type="number"
+              id="updNumSesiones"
+              required /></label
+          ><br /><br />
+          <label
+            >Hora Inicio:<br /><input
+              type="time"
+              id="updHoraInicio"
+              required /></label
+          ><br /><br />
+          <label
+            >Hora Fin:<br /><input
+              type="time"
+              id="updHoraFin"
+              required /></label
+          ><br /><br />
+
+          <div>
+            <h4>Colaboradores asignados</h4>
+            <ul id="updColaboradoresList" class="collaborators-list"></ul>
+          </div>
+
+          <br />
+          <button type="submit" class="invite-btn">Guardar Cambios</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script src="Js/Main.js"></script>
+    <script src="Js/ManageOnboardings.js"></script>
+  </body>
+</html>

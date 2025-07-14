@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "nombre": "edwar aguiar",
+    "correo": "eaguiar@gmail.com",
+    "fecIng": "2025-07-13"
+  },
+  {
+    "id": 2,
+    "nombre": "sofia casas",
+    "correo": "sofia@gmail.com",
+    "fecIng": "2025-07-13"
+  },
+  {
+    "id": 1,
+    "nombre": "edwar aguiar",
+    "correo": "eaguiar@gmail.com",
+    "fecIng": "2025-07-13"
+  },
+  {
+    "id": 2,
+    "nombre": "sofia casas",
+    "correo": "sofia@gmail.com",
+    "fecIng": "2025-07-13"
+  },
+  {
+    "id": 1,
+    "nombre": "edwar aguiar",
+    "correo": "eaguiar@gmail.com",
+    "fecIng": "2025-07-13"
+  },
+  {
+    "id": 2,
+    "nombre": "sofia casas",
+    "correo": "sofia@gmail.com",
+    "fecIng": "2025-07-13"
+  },
+  {
+    "id": 1,
+    "nombre": "edwar aguiar",
+    "correo": "eaguiar@gmail.com",
+    "fecIng": "2025-07-13"
+  },
+  {
+    "id": 2,
+    "nombre": "sofia casas",
+    "correo": "sofia@gmail.com",
+    "fecIng": "2025-07-13"
+  }
+]

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard de Onboardings</title>
+    <link rel="stylesheet" href="css/Style.css" />
+    <link rel="stylesheet" href="css/Dashboard.css" />
+  </head>
+  <body>
+    <div id="navbar-container"></div>
+
+    <h1 class="page-title">Dashboard de Onboardings</h1>
+
+    <div class="filters-bar">
+      <select id="filterCorreo">
+        <option value="">Filtrar por correo</option>
+      </select>
+
+      <select id="filterCategoria">
+        <option value="">Filtrar por categoría</option>
+      </select>
+
+      <select id="filterOnboarding">
+        <option value="">Filtrar por onboarding</option>
+      </select>
+
+      <select id="filterEstado">
+        <option value="">Filtrar por estado</option>
+        <option value="PENDIENTE">PENDIENTE</option>
+        <option value="REALIZADO">REALIZADO</option>
+        <option value="CANCELADO">CANCELADO</option>
+      </select>
+    </div>
+
+    <table class="dashboard-table" id="dashboardTable">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Correo</th>
+          <th>Categoría</th>
+          <th>Onboarding</th>
+          <th>Estado Onboarding</th>
+          <th>Fecha de Inicio</th>
+          <th>Sesiones</th>
+           <th>Asistencia</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Aquí se llenan los datos con JS -->
+      </tbody>
+    </table>
+
+    <script src="Js/Main.js"></script>
+    <script src="js/Dashboard.js"></script>
+  </body>
+</html>
